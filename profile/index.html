@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            background: #222;
+            height: 100%;
+            margin: 0;
+        }
+        #container {
+            position : relative;
+            left: 50%;
+            margin-left: -450px;
+            width : 900px;
+            background:#fff;
+        }
+        aside{
+            float: left;
+            width: 300px;
+            padding: 20px 50px;
+            height: 100%;
+            background: rgb(216,216,216);
+        }
+        li, p {
+            line-height: 2.0;
+            font-size:0.9em;
+        }
+        .px{
+            border-radius: 10%;
+            box-shadow: 3px, 3px, 10px, 2px #222;
+        }
+        #detail {
+            position : relative;
+            top: 80px;
+        }
+        #sns {
+            position:relative;
+            top: 100px;
+        }
+        #main {
+            float:right;
+            width:600px;
+            height:100%;
+            padding:20px;
+        }
+        #main > section {
+            width: 500px;
+            padding: 20px;
+            margin: 10px;
+            border-bottom: 1px dotted #222;
+        }
+        section > p, section > table {
+            margin-left: 50px;
+        }
+        aside h1 {
+            font-size : 1.8em;
+            font-variant: small-caps;
+        }
+        aside h2 {
+            font-size : 1.2em;
+        }
+        #namecard p {
+            font-size : 0.9em;
+            color: rgb(99,99,99);
+        }
+        .subtitle {
+            font-size : 1.5em;
+            line-height : 0.9em;
+        }
+        .subtitle::before {
+            content:"";
+            display:block;
+            background:url("../images/note.png") no-repeat;
+            width: 24px;
+            height: 24px;
+            float: left;
+            margin: 0 15px 0 0;
+        }
+        section > p {
+            font-size : 0.9em;
+        }
+        .label {
+            display: inline-block;
+            width: 80px;
+            color: purple;
+            font-weight: bold;
+        }
+        meter {
+            width: 200px;
+            margin-right: 10px;
+        }
+        table {
+            width : 70%;
+            border: 1px solid #222;
+            border-collapse: collapse;
+        }
+        thead {
+            background : #eee;
+        }
+        th, td {
+            border : 1px solid #ccc;
+            padding: 5px;
+            font-size : 0.8em;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="main">
+        <!-- 자기소개 -->
+        <section>
+            <h2 class="subtitle">Who am I ?</h2>
+            <p>
+                <mark>프론트앤드</mark> 웹 기술과 <mark>웹퍼블리싱</mark>에 관심이 많이 있습니다.<br>
+                현재 부산의 메가스터디 IT 아카데미에서 웹퍼블리싱 과정을 배우고 있습니다.
+            </p>
+        </section>
+        <hr>
+        <!-- 경력 -->
+        <section>
+            <h2 class="subtitle">Experience</h2>
+            <p>
+                <ul>
+                    <li>
+                        <span>웹퍼블리싱</span>
+                        <ol>
+                            <li>업무 내용1</li>
+                            <li>업무 내용2</li>
+                            <li>업무 내용3</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <span>웹디자인</span>
+                        <ol>
+                            <li>디자인1</li>
+                            <li>디자인2</li>
+                            <li>디자인3 / 디자인4</li>
+                        </ol>
+                    </li>
+                </ul>
+            </p>
+        </section>
+        <hr>
+        <!-- 숙련도 -->
+        <section>
+            <h2 class="subtitle">Skills</h2>
+        </section>
+        <hr>
+        <!-- 학력 -->
+        <section>
+            <h2 class="subtitle">Education</h2>
+            <table>
+                <caption>학력 사항</caption>
+                <thead>
+                    <tr>
+                        <th>출신학교</th>
+                        <th>전공</th>
+                        <th>기간</th>
+                        <th>구분</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>o o o 고등학교</td>
+                        <td> - </td>
+                        <td>2001. 3 ~ 2004. 2</td>
+                        <td>졸업</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <hr>
+    </div>
+</body>
+</html>

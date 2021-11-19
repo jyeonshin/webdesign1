@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insert page title</title>
+    <style>
+        ul {
+            list-style: square;
+        }
+        li a {
+            line-height: 30px;
+            font-size: 14px;
+            color: blue;
+            text-decoration: none;
+        }
+        a[href $="hwp"] { /* href 속성이 hwp로 끝나는 태그 선택 */
+            background: url(hwp_icon.gif) center right no-repeat;
+            padding-right: 25px;
+        }
+        a[href $="xls"] {
+            background: url(excel_icon.gif) center right no-repeat;
+            padding-right: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h3>회사 소개 파일 다운 받기</h3>
+    <ul>
+        <li><a href="intro.hwp">hwp 파일</a></li>
+        <li><a href="intro.xls">엑셀 파일</a></li>
+    </ul>
+</body>
+</html>

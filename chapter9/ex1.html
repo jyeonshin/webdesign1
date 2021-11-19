@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insert page title</title>
+    <style>
+        div {
+            float: left;
+            margin-right: 20px;
+            width: 300px;
+            height: 150px;
+            margin: 10px;
+            padding: 30px;
+            border: 2px solid red;
+        }
+        .box1 {
+            box-sizing: content-box; /* 기본값이라 굳이 설정할 필요는 없지만 비교하기 위해서 직접 입력 */
+        }
+        .box2 {
+            box-sizing: border-box; 
+            /* 실제로 디자인을 할 때 컨텐츠의 정확한 너비를 계산해야되는 경우가 자주 생기는데 계산하기 어려운 상황이다. */
+            /* 근데 정확한 값으로 설정해야 한다 라면은 border-box로 지정해주는 것도 좋은 방법 */
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">box-sizing="content-box"</div>
+    <div class="box2">box-sizing="border-box"</div>
+</body>
+</html>

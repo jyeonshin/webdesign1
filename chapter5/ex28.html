@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insert page title</title>
+    <style>
+        p {
+            width: 300px;
+            border: 1px solid gray;
+            white-space: nowrap;
+            overflow: hidden; /* 넘치는 부분을 감춤 */
+        }
+        /* text-overflow 속성을 사용하기 위해서는 white-space 속성이 nowrap으로 되어있어야 함 */
+        /* overflow 속성이 hidden, scroll, auto 중 하나여야 함 */
+        .clip {
+            text-overflow: clip;
+        }
+        .ellipsis {
+            text-overflow: ellipsis; /* 말줄임표 라고도 함 */
+        }
+        .ellipsis:hover {
+            overflow: visible;
+        }
+    </style>
+</head>
+<body>
+    <h1>블루베리(Blueberry)</h1>
+    <p>블루베리는 비타민 A, C, E가 풍부하고 안토니시아민,
+        페놀 등이 활성 산소를 없애 노화를 억제하고
+        블루베리의 안토니시아민은 눈의 피로와 시력 저하를 회복시키는 효능을 가지기도 한다.</p>
+    <p class="clip">블루베리는 비타민 A, C, E가 풍부하고 안토니시아민,
+        페놀 등이 활성 산소를 없애 노화를 억제하고
+        블루베리의 안토니시아민은 눈의 피로와 시력 저하를 회복시키는 효능을 가지기도 한다.</p>
+    <p class="ellipsis">블루베리는 비타민 A, C, E가 풍부하고 안토니시아민,
+        페놀 등이 활성 산소를 없애 노화를 억제하고
+        블루베리의 안토니시아민은 눈의 피로와 시력 저하를 회복시키는 효능을 가지기도 한다.</p>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insert page title</title>
+    <style>
+        #header {
+            width: 96%;
+            margin: 0 auto;
+            font-size: 12px;
+        }
+        .header-text {
+            font-size: 2em; /* 부모태그인 div 태그의 글씨 크기에 영향을 받아서 2em이 12*2=24px가 됨.  */
+            /* em이 가변 글씨 크기라는건 부모 태그를 글씨 크기를 기준으로 삼기 때문에 가변이라고 얘기함 / 적용하지 않으면 기본은 16px임*/
+            text-align: center;
+        }
+        .fluid-text {
+            font-size: 1.5em; /* 실제 크기는 36px 24*1.5=36px / 부모 태그인 header 태그의 글씨 크기를 기준으로 하기 때문에 */
+            /* header-text 부모 태그에 font-size 속서이 있으므로 header-text태그의 font-size에 1.5배가 됨 */
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <header class="header-text">
+            <p>가변 그리드 레이아웃</p>
+            <p class="fluid-text">가변 글씨 크기</p>
+        </header>
+    </div>
+</body>
+</html>

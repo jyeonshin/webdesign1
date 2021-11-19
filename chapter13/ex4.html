@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insert page title</title>
+    <style>
+        .origin {
+            width: 210px;
+            height: 200px;
+            border: 1px solid black;
+            float: left;
+            margin: 40px;
+            perspective: 200px; /* 회전을 할 때 화면의 깊이가 필요함, 회전을 하기 전에 화면에 깊이를 주는 속성, 브라우저 접두사가 필요한 속성 */
+        }
+        .rotate1:hover {
+            transform: rotateX(45deg);
+        }
+        .rotate2:hover {
+            transform: rotateY(45deg);
+        }
+        .rotate3:hover {
+            transform: rotateZ(45deg);
+        }
+        .rotate4:hover {
+            transform: rotate3d(2.5, 1.2, -1.5, 45deg);
+        }
+    </style>
+
+</head>
+<body>
+    <div class="origin">
+        <div class="rotate1">
+            <img src="fruit.jpg">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="rotate2">
+            <img src="fruit.jpg">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="rotate3">
+            <img src="fruit.jpg">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="rotate4">
+            <img src="fruit.jpg">
+        </div>
+    </div>
+</body>
+</html>

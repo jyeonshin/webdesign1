@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insert page title</title>
+    <style>
+        .wrapper {
+            width: 500px;
+            height: 50px;
+            margin: 0 auto 20px;
+            display: flex;
+            border: 2px solid black;
+        }
+        #container1 {
+            /* 주축의 시작점을 기준으로 배치 */
+            justify-content: flex-start;
+        }
+        #container2 {
+            /* 주축의 끝점을 기준으로 배치 */
+            justify-content: flex-end;
+        }
+        #container3 {
+            /* 주축의 중앙을 기준으로 배치 */
+            justify-content: center;
+        }
+        #container4 {
+            /* 첫 번쨰 항목과 마지막 항목은 시작점과 끝점에 배치를 한 뒤 중앙에 항목들을 같은 간격으로 배치 */
+            justify-content: space-between;
+        }
+        #container5 {
+            /* 모든 항목들을 같은 간격으로 배치 */
+            justify-content: space-around;
+        }
+        #wrapper div {
+            width: 100px;
+            border: 2px solid black;
+            background: #ccc;
+        }
+        h1 {
+            text-align: center;
+        }
+        p {
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>justify-content : flex-start(기본값)</h1>
+    <div id="container1" class="wrapper">
+        <div><p>1</p></div>
+        <div><p>2</p></div>
+        <div><p>3</p></div>
+    </div>
+    <h1>justify-content : flex-end</h1>
+    <div id="container2" class="wrapper">
+        <div><p>1</p></div>
+        <div><p>2</p></div>
+        <div><p>3</p></div>
+    </div>
+    <h1>justify-content : center</h1>
+    <div id="container3" class="wrapper">
+        <div><p>1</p></div>
+        <div><p>2</p></div>
+        <div><p>3</p></div>
+    </div>
+    <h1>justify-content : space-between</h1>
+    <div id="container4" class="wrapper">
+        <div><p>1</p></div>
+        <div><p>2</p></div>
+        <div><p>3</p></div>
+    </div>
+    <h1>justify-content : space-around</h1>
+    <div id="container5" class="wrapper">
+        <div><p>1</p></div>
+        <div><p>2</p></div>
+        <div><p>3</p></div>
+    </div>
+</body>
+</html>

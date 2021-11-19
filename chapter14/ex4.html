@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insert page title</title>
+    <style>
+        #wrapper {
+            width: 96%; /* 그리드 레이아웃을 사용할건데 기준 너비를 960px로 설정/ 960그리드 */ 
+            /*원래 100%기준인데 답답한 느낌을 줌으로 96%가 적당*/
+            margin: 0 auto;
+        }
+        header {
+            width: 100%; /* 가변 그리드 레이아웃 : 퍼센트 */
+            height: 120px;
+            background-color: #066cfa;
+            border-bottom: 1px solid black;
+        }
+        .header-text {
+            color: white;
+            text-align: center;
+            line-height: 120px;
+        }
+        .content {
+            float: left;
+            width: 62.5%; /* 가변 그리드 레이아웃 : 부모태그로부터 차례로 값에 따른 퍼센트 계산 */
+            height: 400px;
+            padding: 1.5625%;
+            background-color: #ffd800;
+        }
+        .content img {
+            /* max-width를 설정하지 않으면 이미지가 갖고 있는 너비 그대로 사용되기 때문에
+            브라우저가 너비보다 좁아지면 이미지가 짤리거나 좌우로 스크롤을 해야함 |
+             max-width를 100%로 설정하면 부모 태그의 너비를 벗어났을 때는
+             부모 태그에 너비를 넘어가지 않도록 설정이 되서 짤리거나 좌우 스크롤을 하지 않아도 됨 */
+            max-width: 100%;
+        }
+        .right-side {
+            float: right;
+            width: 31.25%;
+            height: 400px;
+            background-color: #00ff90;
+        }
+        footer {
+            width: 100%;
+            clear: both;
+            height: 120px;
+            background-color: #c3590a;
+            text-align: center;
+            line-height: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1 class="header-text">고정 그리드 레이아웃</h1>
+        </header>
+        <section class="content">
+            <h4>본문</h4>
+            <!-- img 태그에 srcset 속성이 있음 / 이 속성을 사용하면 해상도에 맞게
+                적절한 이미지를 보여주도록 이미지를 지정할 수 있음
+                기기 너비에 맞춰서 보여줘가 아니라 해상도에 맞는 이미지를 보여줘 이므로
+                해상도에 대해서도 이해를 하고 있어야 쓸 수 있음 -->
+
+            <img src="fireworks.png" srcset="fireworks.png 1x, fireworks2.png 2x, fireworks3.png 3x">
+        </section>
+        <aside class="right-side">
+            <h4>사이드바</h4>
+        </aside>
+        <footer>
+            <h4>푸터</h4>
+        </footer>
+    </div>
+</body>
+</html>

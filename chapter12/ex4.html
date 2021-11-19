@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insert page title</title>
+    <style>
+        ul {
+            list-style: none;
+        }
+        li {
+            width: 120px;
+            display: inline-block;
+            margin: 10px;
+        }
+        li a {
+            padding: 5px 20px;
+            font-size: 14px;
+            color: blue;
+            text-decoration: none;
+        }
+        a[href] { /* a태그 중에서도 href 속성을 갖고 있는 태그를 선택 */
+            background: yellow;
+        }
+        [data] { /* 모든 태그 중 data 속성을 갖고 있는 태그를 선택 */
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a>메인 메뉴 : </a></li>
+        <li><a href="#" data>메뉴1</a></li>
+        <li><a href="#">메뉴2</a></li>
+        <li><a href="#">메뉴3</a></li>
+        <li><a href="#">메뉴4</a></li>
+    </ul>
+</body>
+</html>

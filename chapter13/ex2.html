@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insert page title</title>
+    <style>
+        .origin {
+            width: 200px;
+            height: 134px;
+            border: 1px solid black;
+            float: left;
+            margin: 40px;
+        }
+        .scalex:hover {
+            /* 확대를 할 때에는 배율로 확대, 100%가 원본 사이즈, 90% 원본에서 10퍼센트 축소, 110% 원본에서 10퍼센트 확대 */
+            transform: scaleX(1.2);
+        }
+        .scaley:hover {
+            transform: scaleY(1.5);
+        }
+        .scalexy:hover {
+            transform: scale(0.7);
+        }
+    </style>
+</head>
+<body>
+    <div class="origin">
+        <div class="scalex">
+            <img src="bus.jpg">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="scaley">
+            <img src="bus.jpg">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="scalexy">
+            <img src="bus.jpg">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insert page title</title>
+    <style>
+        div {
+            width: 500px;
+            height: 300px;
+            margin: 10px;
+        }
+        .grad1 {
+            background-image: skyblue;
+            background-image: -webkit-radial-gradient(red, yellow, skyblue);
+            background-image: -moz-radial-gradient(red, yellow, skyblue);
+            background-image: -o-radial-gradient(red, yellow, skyblue);
+            background-image: radial-gradient(red, yellow, skyblue);
+        }
+        /* 모양을 지정해주지 않았으므로 타원형이 됨*/
+        /* 시작 색상(red)의 위치를 지정해주지 않았으므로 시작 색상의 위치는 중앙 */
+        /* 크기를 지정하지 않았으므로 farthest-corner가 됨 */
+        .grad2 {
+            background-image: skyblue;
+            background-image: -webkit-radial-gradient(red, yellow 20%, skyblue);
+            background-image: -moz-radial-gradient(red, yellow 20%, skyblue);
+            background-image: -o-radial-gradient(red, yellow 20%, skyblue);
+            background-image: radial-gradient(red, yellow 20%, skyblue);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grad1"></div>
+    <div class="grad2"></div>
+</body>
+</html>

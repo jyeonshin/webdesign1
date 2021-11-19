@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insert page title</title>
+    <style>
+        #wrapper {
+            width: 96%; /* 그리드 레이아웃을 사용할건데 기준 너비를 960px로 설정/ 960그리드 */ 
+            /*원래 100%기준인데 답답한 느낌을 줌으로 96%가 적당*/
+            margin: 0 auto;
+        }
+        header {
+            width: 100%; /* 가변 그리드 레이아웃 : 퍼센트 */
+            height: 120px;
+            background-color: #066cfa;
+            border-bottom: 1px solid black;
+        }
+        .header-text {
+            font-size: 2.5em;
+            color: white;
+            text-align: center;
+            line-height: 120px;
+        }
+        .content {
+            float: left;
+            width: 62.5%; /* 가변 그리드 레이아웃 : 부모태그로부터 차례로 값에 따른 퍼센트 계산 */
+            height: 400px;
+            padding: 1.5625%;
+            background-color: #ffd800;
+            text-align: center;
+            line-height: 380px;
+        }
+        .right-side {
+            float: right;
+            width: 31.25%;
+            height: 400px;
+            background-color: #00ff90;
+            font-size: 1.5em;
+            text-align: center;
+            line-height: 380px;
+        }
+        footer {
+            width: 100%;
+            clear: both;
+            height: 120px;
+            background-color: #c3590a;
+            font-size: 1.5em;
+            text-align: center;
+            line-height: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1 class="header-text">고정 그리드 레이아웃</h1>
+        </header>
+        <section class="content">
+            <h4>본문</h4>
+        </section>
+        <aside class="right-side">
+            <h4>사이드바</h4>
+        </aside>
+        <footer>
+            <h4>푸터</h4>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insert page title</title>
+    <style>
+        .origin {
+            width: 210px;
+            height: 200px;
+            border: 1px solid black;
+            float: left;
+            margin: 40px;
+            perspective: 200px; /* 회전을 할 때 화면의 깊이가 필요함, 회전을 하기 전에 화면에 깊이를 주는 속성, 브라우저 접두사가 필요한 속성 */
+        }
+        .skew1:hover {
+            transform: skewX(45deg);
+        }
+        .skew2:hover {
+            transform: skewY(45deg);
+        }
+        .skew3:hover {
+            transform: skew(-25deg, -15deg);
+        }
+    </style>
+
+</head>
+<body>
+    <div class="origin">
+        <div class="skew1">
+            <img src="rose.jpg">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="skew2">
+            <img src="rose.jpg">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="skew3">
+            <img src="rose.jpg">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insert page title</title>
+    <style>
+        ul {
+            list-style: none;
+        }
+        li {
+            width: 120px;
+            display: inline-block;
+            margin: 10px;
+        }
+        li a {
+            padding: 5px 20px;
+            font-size: 14px;
+            color: blue;
+            text-decoration: none;
+        }
+        a[target="_blank"] { /* a태그 중에서 target 속성을 갖고 있고 target 속성의 값이 _blank인 태그 선택 */
+            padding-right: 30px;
+            background: pink;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title bold">HTML5 표준안 사이트</h1>
+    <ul>
+        <li><a href="http://www.w3c.org/TR/html" target="_blank">HTML</a></li>
+        <li><a href="http://www.w3.org/TR/selectors" target="_self">CSS Selector Level 3</a></li>
+        <li><a href="http://www.w3c.org/TR/css3-mediaqueries">미디어쿼리</a></li>
+    </ul>
+</body>
+</html>

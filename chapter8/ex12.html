@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insert page title</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        div {
+            width: 200px;
+            height: 100px;
+            margin: 30px;
+            /* 마진이 다른 태그와 겹치게 되면 더 큰 마진으로 흡수가 됨 */
+            /* 마진 중첩 현상은 세로로 배치했을 때만 발생 */
+        }
+        #box1 {background: blue;}
+        #box2 {background: red;}
+        #box3 {background: green;}
+    </style>
+</head>
+<body>
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+</body>
+</html>

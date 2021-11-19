@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    background-color: #212121;
+    color: white;
+}
+
+header .logo{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+header .logo i {
+    color: red;
+}
+
+header .icons .fa-search {
+    margin-right: 12px;
+}
+
+section.player video {
+    width: 100%;
+    max-width: 1000px;
+}
+
+section.player {
+    position: sticky;
+    top: 0;
+    background-color: #212121;
+    text-align: center;
+}
+
+.info {
+    padding: 12px;
+}
+
+.hashtags {
+    display: flex;
+    list-style: none;
+    font-size: 12px;
+    color: #065FD4;
+}
+
+.hashtags li {
+    margin-right: 12px;
+}
+
+.titleAndBtn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.titleAndBtn .more {
+    border: none;
+    background: white;
+    cursor: pointer;
+    height: 100%;
+}
+
+.titleAndBtn .more i {
+    font-size: 20px;
+}
+
+.views {
+    font-size: 12px;
+    color: #909090;
+    margin-top: 5px;
+}
+
+.actionBtn {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-top: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgray;
+}
+
+.actionBtn li button{
+    border: none;
+    background: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.actionBtn li button i {
+    margin: 0 auto;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.channelInfo {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 6px;
+    border-bottom: 1px solid lightgray;   
+}
+
+.channelInfo .meta {
+    display: flex;
+    align-items: center;
+}
+
+.channelInfo .meta img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.channelInfo .meta .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.channelInfo .meta .info .name {
+    font-size: 15px;
+}
+.channelInfo .meta .info .subs {
+    font-size: 12px;
+    color: #909090;
+}
+
+.channelInfo .subscribe {
+    border: none;
+    background: white;
+    color: red;
+    cursor: pointer;
+    font-size: 14px;
+}

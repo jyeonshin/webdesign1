@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 내비게이션 */
+nav {
+    width: 100vw; /* vw -> 퍼센트로 크기를 지정하는 단위 | 100%와 차이점은 vw는 viewport의 너비를 따라간다. */
+    height: auto;
+    background-color: #34495e;
+    font-size: 1.2rem; /* nav 부모 태그에 글씨 크기를 설정하지 않아서 em으로 사용해도 됨 */
+    font-weight: bold;
+    position: relative;
+}
+
+nav ul {
+    display: none;
+}
+
+nav ul li { /* display:block을 사용 / 사용하지 않아도 보이는데는 문제가 없음 / li의 display 기본값이 어떤 건지 찾아오기 */
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #576979;
+}
+
+nav ul li a {
+    line-height: 50px; /* line-height를 준 이유는? 텍스트가 위로 올라감, 텍스트를 가운데 정렬한 효과를 내기 위해서. margin이나 padding값 지정해도 됨 */
+}
+
+    /* 화면을 좁혔을 때 화면의 오른쪽에 색이 가득 차지 않고 살짝 남는 부분이 있음
+    이유는 아래 속성들 중에 하나 때문.. 어떤 속성 때문인지 padding-left속성, 어떻게 수정해야 하는지 내일 수업 전까지 찾아오기| width:96%로 줘도 됨 */
+nav a#trigger {
+    display: block;
+    background-color: #283744;
+    width: 100%;
+    padding-left: 15px;
+    line-height: 40px;
+    position: relative;
+}
+
+a:link, a:hover, a:visited {
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #283744;
+}
+
+/* 본문(섹션) */
+/* div class="bxslider"을 이용해서 캐러셀 적용 */
+section {
+    width: 100vw;
+    position: relative;
+}
+section:nth-child(odd) {
+    background-color: #f3f3f4;
+}
+.section-title {
+    margin: 30px auto 50px auto;
+}
+.section-title h3 {
+    font-size: 1.8rem;
+    text-align: center;
+}
+.wrapper {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.banner, .wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 764px) {
+    nav {
+        height: 80px;
+        border-bottom: 2px solid #34495e;
+    }
+
+    nav ul {
+        list-style: none;
+        display: block;
+        width: 750px;
+        height: 80px;
+        padding: 0;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    /* 여기서부터 */
+
+    nav ul li {
+        border-bottom: 0;
+        border-right: 1px solid #576979;
+        margin-right: -6px;
+    }
+
+    nav ul li:last-child {
+        border-right: 0;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+        line-height: 80px;
+    }
+
+    /* 여기까지 입력한 속성 중에 몇 가지 때문에 메뉴에 있는 텍스트가 가운데 쯤에 출력되고 있음
+        왜 그런지 내일 수업 때까지 찾아오기 line-height 속성
+    */
+
+    nav a#trigger {
+        display: none;
+    }
+
+    .intro {
+        display: flex;
+        padding: 20px 60px;
+    }
+
+    .intro .text {
+        flex: 2;
+    }
+    
+    .intro .image {
+        display: block;
+        flex: 1;
+    }
+    .intro .image img {
+        max-width: 200px;
+    }
+
+    .footer-info {
+        display: flex;
+        max-width: 1300px;
+        align-items: center;
+    }
+
+    .contact {
+        flex: 2;
+    }
+    .sns {
+        flex: 1;
+    }
+}
+
+/* 본문 -> 코딩 영역 */
+.about {
+    padding: 20px 50px;
+}
+.msg {
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.msg p {
+    color: #ff6600;
+    font-size: 1.4rem;
+    font-style: italic;
+    text-align: center;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+.msg span {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+/* 본문 -> 왜 코딩 교육? 영역 */
+.intro {
+    padding: 20px 50px;
+}
+.text {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.text h3 {
+    font-size: 1.6rem;
+    margin-bottom: 50px;
+}
+.text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.image {
+    display: none;
+}
+/* 본문 -> 교육 프로그램 영역 */
+.program-list {
+    padding: 20px 50px;
+}
+.program-list h4 {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+.program {
+    padding: 30px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #aaa;
+}
+
+/* 푸터 */
+.footer {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: #34495e;
+}
+.footer-info {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.contact {
+    color: #fff;
+}
+.sns {
+    margin-top: 50px;
+}
+.sns a {
+    margin-right: 30px;
+}
+.sns a:last-child {
+    margin-right: 0;
+}
+

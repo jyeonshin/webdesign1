@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insert page title</title>
+    <style>
+        .origin {
+            width: 200px;
+            height: 134px;
+            border: 1px solid black;
+            float: left;
+            margin: 40px;
+        }
+        .movex:hover {
+            -webkit-transform: translateX(50px);
+            -ms-transform: translateX(50px);
+            -moz-transform: translateX(50px);
+            -o-transform: translateX(50px);
+            transform: translateX(50px);
+        }
+        .movey:hover {
+            transform: translateY(50px);
+        }
+        .movexy:hover {
+            transform: translate(10px, 20px);
+        }
+    </style>
+</head>
+<body>
+    <div class="origin">
+        <div class="movex">
+            <img src="bus.jpg">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="movey">
+            <img src="bus.jpg">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="movexy">
+            <img src="bus.jpg">
+        </div>
+    </div>
+</body>
+</html>

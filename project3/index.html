@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insert page title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .bookInfo_wrapper {
+            display: flex;
+            width: 70%;
+            margin: 10px auto;
+        }
+
+        .bookImgInfo img {
+            max-height: 300px;
+        }
+        .bookTextInfo p {
+            margin-bottom: 20px;
+        }
+        .bookTextInfo .bookTitle span:first-child {
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .bookTextInfo .bookTitle span:last-child {
+            color: gray;
+        }
+        .bookTextInfo .bookAuthor {
+            font-weight: lighter;
+        }
+        .bookTextInfo .bookPrice {
+            font-weight: lighter;
+        }
+        .bookTextInfo .bookPrice span:nth-child(1) {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .bookTextInfo .bookPrice span:nth-child(2) {
+            color: blue;
+            font-weight: bold;
+            border: 1px solid blue;
+            background: skyblue;
+            padding: 0 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <!--도서의 정보-->
+    <section class="bookInfo_wrapper">
+        <!--도서 이미지-->
+        <section class="bookImgInfo">
+            <img src="http://image.yes24.com/goods/96674934/XL">
+        </section>
+        <!--도서 정보-->
+        <section class="bookTextInfo">
+            <!-- 도서 제목 -->
+            <p class="bookTitle">
+                <span>Do it! HTML+CSS+자바스크립트 웹 표준의 정석</span>
+                <span>한 권으로 끝내는 웹 기본 교과서</span>
+            </p>
+            <!-- 저자, 출판사, 출판일 -->
+            <p class="bookAuthor">
+                고경희 | 이지스퍼블리싱 | 2021년 01월</p>
+            <!-- 가격 -->
+            <p class="bookPrice"><span>27,000원</span> (10% 할인) <span>P</span> 1,500원</p>
+        </section>
+    </section>
+</body>
+</html>
